@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light: #fff;
+    --dark: #000;
+    --primary: #007bff;
+    --bg-color: var(--light);
+    --text-color: var(--dark);
+}
+
+html {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    color-scheme: light;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+}
+
+.dark {
+    --bg-color: var(--dark);
+    --text-color: var(--light);
+    color-scheme: dark;
+}
